@@ -18,11 +18,12 @@ var quotes = [
   {'quote': 'The principles of true art is not to portray, but to evoke.', 'source': 'Jerzy Kosinski',  'citation': 'Twisted Sifter', 'year': 2012},
   {'quote': 'Painting is easy when you don’t know how, but very difficult when you do.', 'source': 'Edgar Degas', 'citation': 'Twisted Sifter', 'year': 2012},
   {'quote': 'As my artist’s statement explains, my work is utterly incomprehensible and is therefore full of deep significance.', 'source': 'Calvin', 'citation': 'Twisted Sifter', 'year': 2012},
+  {'quote': 'Draw your pleasure, paint your pleasure, and express your pleasure strongly.', 'source': 'Pierre Bonnard', 'citation': 'BrainyQuote.com', 'year': 2019 }
 ];
 
 // Random number generator
 function getRandomQuote() {
-  return Math.floor(Math.random() * quotes.length - 1) + 1;
+  return Math.floor(Math.random() * ((quotes.length - 1) + 1));
 }
 
 /* This is the quote generator, it chooses which quote to show by invoking the getRandomQuote function, then uses the random number it puts out as index to the quotes literal objects. */
