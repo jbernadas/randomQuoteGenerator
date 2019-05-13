@@ -28,8 +28,6 @@ var quotes = [
   {'quote': 'As my artist’s statement explains, my work is utterly incomprehensible and is therefore full of deep significance', 'source': 'Calvin', 'citation': 'Twisted Sifter', 'year': 2012},
 ];
 
-
-
 /***
   Create the `getRandomQuote` function to:
    - Create a variable to store a random number 
@@ -56,8 +54,6 @@ function printQuote() {
   var outputQuote = document.getElementById('quote-box');
   outputQuote.innerHTML = '<p class="quote">' + quotes[x]['quote'] + '</p><p class="source">' + quotes[x]['source'] + '<span class="citation">' + quotes[x]['citation'] + '</span><span class="year"> ' + quotes[x]['year'] + '</p>';
 }
-
-
 
 /***
   When the "Show another quote" button is clicked, the event listener 
