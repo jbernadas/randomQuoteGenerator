@@ -3,24 +3,21 @@ Treehouse FSJS Techdegree:
 project 1 - A Random Quote Generator
 ******************************************/
 
-// Study guide for this project - https://drive.google.com/file/d/1s5grutGuQFwJcQP8bFwEI69Q8FCkGdDk/view?usp=sharing
-
-
 /*** 
   This is the source of quotes the generator retrieves from. Use the following format to add more quotes: 
   {'quote': '', 'source': '', 'citation': '', 'year': }
 ***/
 var quotes = [
-  {'quote': 'Every artist was first an amateur', 'source': 'Ralph Waldo Emerson', 'citation': 'Twisted Sifter', 'year': 2012},
-  {'quote': 'Creativity takes courage', 'source': 'Henri Matisse', 'citation': 'Twisted Sifter', 'year': 2012},
+  {'quote': 'Every artist was first an amateur.', 'source': 'Ralph Waldo Emerson', 'citation': 'Twisted Sifter', 'year': 2012},
+  {'quote': 'Creativity takes courage.', 'source': 'Henri Matisse', 'citation': 'Twisted Sifter', 'year': 2012},
   {'quote': 'Every child is an artist. The problem is how to remain an artist once we grow up.', 'source': 'Pablo Picasso', 'citation': 'Twisted Sifter', 'year': 2012},
-  {'quote': 'You don’t take a photograph, you make it', 'source': 'Ansel Adams', 'citation': 'Twisted Sifter', 'year': 2012},
+  {'quote': 'You don’t take a photograph, you make it.', 'source': 'Ansel Adams', 'citation': 'Twisted Sifter', 'year': 2012},
   {'quote': 'Art enables us to find ourselves and lose ourselves at the same time.', 'source': 'Thomas Merton', 'citation': 'Twisted Sifter', 'year': 2012},
-  {'quote': 'We don’t make mistakes, just happy little accidents', 'source': 'Bob Ross', 'citation': 'Twisted Sifter', 'year': 2012},
-  {'quote': 'A picture is a poem without words', 'source': 'Horace', 'citation': 'Twisted Sifter', 'year': 2012},
-  {'quote': 'The principles of true art is not to portray, but to evoke', 'source': 'Jerzy Kosinski',  'citation': 'Twisted Sifter', 'year': 2012},
-  {'quote': 'Painting is easy when you don’t know how, but very difficult when you do', 'source': 'Edgar Degas', 'citation': 'Twisted Sifter', 'year': 2012},
-  {'quote': 'As my artist’s statement explains, my work is utterly incomprehensible and is therefore full of deep significance', 'source': 'Calvin', 'citation': 'Twisted Sifter', 'year': 2012},
+  {'quote': 'We don’t make mistakes, just happy little accidents.', 'source': 'Bob Ross', 'citation': 'Twisted Sifter', 'year': 2012},
+  {'quote': 'A picture is a poem without words.', 'source': 'Horace', 'citation': 'Twisted Sifter', 'year': 2012},
+  {'quote': 'The principles of true art is not to portray, but to evoke.', 'source': 'Jerzy Kosinski',  'citation': 'Twisted Sifter', 'year': 2012},
+  {'quote': 'Painting is easy when you don’t know how, but very difficult when you do.', 'source': 'Edgar Degas', 'citation': 'Twisted Sifter', 'year': 2012},
+  {'quote': 'As my artist’s statement explains, my work is utterly incomprehensible and is therefore full of deep significance.', 'source': 'Calvin', 'citation': 'Twisted Sifter', 'year': 2012},
 ];
 
 // Random number generator
