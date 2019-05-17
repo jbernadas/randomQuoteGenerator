@@ -1,3 +1,5 @@
+"use strict"; // Activates strict mode in modern browsers
+
 /******************************************
 Treehouse FSJS Techdegree:
 project 1 - A Random Quote Generator
@@ -26,7 +28,7 @@ function getRandomQuote() {
   return Math.floor(Math.random() * ((quotes.length - 1) + 1));
 }
 
-/* This is the quote generator, it chooses which quote to show by invoking the getRandomQuote function, then uses the random number it puts out as index to the quotes literal objects. */
+/* This is the quote generator, it chooses which quote to show by invoking the getRandomQuote function, then uses the random number it puts out as an index in retrieving from the 'quotes' object literal. */
 function printQuote() {
   var x = getRandomQuote();
   var outputQuote = document.getElementById('quote-box');
