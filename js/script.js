@@ -23,14 +23,14 @@ var quotes = [
   {'quote': 'Draw your pleasure, paint your pleasure, and express your pleasure strongly.', 'source': 'Pierre Bonnard', 'citation': 'BrainyQuote.com', 'year': 2019 }
 ];
 
-// Random number generator
+// Random number generator (function declaration)
 function getRandomQuote() {
   return Math.floor(Math.random() * ((quotes.length - 1) + 1));
 }
 
 /* This is the quote generator, it chooses which quote to show by invoking the getRandomQuote function, then uses the random number it puts out as an index in retrieving from the 'quotes' object literal. */
 function printQuote() {
-  var x = getRandomQuote();
+  var x = getRandomQuote(); // closure
   var outputQuote = document.getElementById('quote-box');
   outputQuote.innerHTML = '<p class="quote">' + quotes[x]['quote'] + '</p><p class="source">' + quotes[x]['source'] + (quotes[x]['citation'] ? '<span class="citation">' + quotes[x]['citation'] + '</span>' : '') + (quotes[x]['year'] ? '<span class="year"> ' + quotes[x]['year'] + '</span>' : '') + '</p>';
 }
